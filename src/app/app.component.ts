@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get<UserResponse>('https://jsonplaceholder.typicode.com/posts').subscribe(
+    this.http.get<UserResponse>('https://api.github.com/users/mohsinhassan').subscribe(
         data => {
       console.log("User Login : " + data.login);
       console.log("Bio : " + data.bio);
